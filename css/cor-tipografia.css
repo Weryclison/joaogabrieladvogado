@@ -1,0 +1,147 @@
+:root {
+  --cor-0: #fff;
+  --cor-1: #f7f7f7;
+  --cor-2: #ededed;
+  --cor-3: #dedede;
+  --cor-4: #cccccc;
+  --cor-5: #b3b3b3;
+  --cor-6: #9c9c9c;
+  --cor-7: #707070;
+  --cor-8: #595959;
+  --cor-9: #404040;
+  --cor-10: #2e2e2e;
+  --cor-11: #111;
+  --cor-12: #000;
+  --cor-p1: #213c75;
+  --cor-p2: #20345d;
+  --cor-p3: #1a2949;
+  --cor-p4: #111e30;
+  --cor-p5: #0c121b;
+  --detalhe: #dc9a56;
+}
+.detalhe {
+  color: var(--detalhe);
+}
+.cor-p1 {
+  color: var(--cor-p1);
+}
+.cor-p2 {
+  color: var(--cor-p2);
+}
+.cor-p3 {
+  color: var(--cor-p3);
+}
+.cor-p4 {
+  color: var(--cor-p4);
+}
+.cor-p5 {
+  color: var(--cor-p5);
+}
+.cor-0 {
+  color: var(--cor-0);
+}
+.cor-1 {
+  color: var(--cor-1);
+}
+.cor-2 {
+  color: var(--cor-2);
+}
+.cor-3 {
+  color: var(--cor-3);
+}
+.cor-4 {
+  color: var(--cor-4);
+}
+.cor-5 {
+  color: var(--cor-5);
+}
+.cor-6 {
+  color: var(--cor-6);
+}
+.cor-7 {
+  color: var(--cor-7);
+}
+.cor-8 {
+  color: var(--cor-8);
+}
+.cor-9 {
+  color: var(--cor-9);
+}
+.cor-10 {
+  color: var(--cor-10);
+}
+.cor-11 {
+  color: var(--cor-11);
+}
+.cor-12 {
+  color: var(--cor-12);
+}
+.font-1-a {
+  font-family: "lora";
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 1.44px;
+}
+.font-1-b {
+  font-family: "lora";
+  font-size: 3rem;
+  font-weight: 400;
+}
+.font-1-c {
+  font-family: "lora";
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.font-1-d {
+  font-family: "lora";
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.font-1-e {
+  font-family: "lora";
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.font-2-a {
+  font-family: "inter";
+  font-weight: 400;
+  font-size: 2rem;
+}
+.font-2-b {
+  font-family: "inter";
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+}
+.font-2-c {
+  font-family: "inter";
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+@media (max-width: 750px) {
+  .font-1-a {
+    font-size: 1.5rem;
+  }
+  .font-1-b {
+    font-size: 1.5rem;
+  }
+  .font-1-c {
+    font-size: 1.25rem;
+  }
+  .font-1-d {
+    font-size: 1.25rem;
+  }
+  .font-1-e {
+    font-size: 1rem;
+  }
+  .font-2-a {
+    font-size: 1.25rem;
+  }
+  .font-2-b {
+    font-size: 1rem;
+  }
+  .font-2-c {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,51 @@
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.botao {
+  font-family: lora;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--detalhe);
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 4px;
+  letter-spacing: 0;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 2px solid var(--detalhe);
+}
+.botao2 {
+  font-family: lora;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--cor-1);
+  background-color: transparent;
+  padding: 5px 20px;
+  border-radius: 4px;
+  letter-spacing: 0;
+  text-align: center;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 2px solid var(--cor-1);
+}
+@media (max-width: 1200px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 750px) {
+  .botao {
+    font-size: 1.5rem;
+    padding: 5px 10px;
+  }
+  .botao2 {
+    display: none;
+  }
+}

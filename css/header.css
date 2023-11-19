@@ -1,0 +1,54 @@
+header {
+  background-image: url(../img/fundo-estatua.jpg);
+  background-position: top;
+}
+.header-bg {
+  padding-top: 18px;
+}
+header .menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 160px;
+}
+header .menu li {
+  display: inline-block;
+  margin-left: 100px;
+}
+.header-titulo,
+.header-texto {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.header-botoes {
+  display: flex;
+  justify-content: center;
+}
+.header-botoes {
+  gap: 90px;
+  padding-bottom: 180px;
+}
+
+@media (max-width: 1200px) {
+  header .menu {
+    padding-bottom: 60px;
+  }
+  .header-titulo,
+  .header-texto {
+    text-align: left;
+    margin-bottom: 24px;
+  }
+  header .menu ul {
+    display: none;
+  }
+  .header-botoes {
+    justify-content: left;
+    padding-bottom: 90px;
+  }
+}
+@media (max-width: 550px) {
+  .logo {
+    max-width: 60vw;
+  }
+}
