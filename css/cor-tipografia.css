@@ -106,7 +106,7 @@
 .font-2-a {
   font-family: "inter";
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 .font-2-b {
   font-family: "inter";
@@ -139,7 +139,8 @@
     font-size: 1.25rem;
   }
   .font-2-b {
-    font-size: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
   }
   .font-2-c {
     font-size: 1rem;

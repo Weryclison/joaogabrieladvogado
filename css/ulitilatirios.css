@@ -34,12 +34,7 @@
   box-sizing: border-box;
   border: 2px solid var(--cor-1);
 }
-@media (max-width: 1200px) {
-  .container {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-}
+
 @media (max-width: 750px) {
   .botao {
     font-size: 1.5rem;

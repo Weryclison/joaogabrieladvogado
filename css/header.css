@@ -1,6 +1,7 @@
 header {
   background-image: url(../img/fundo-estatua.jpg);
   background-position: top;
+  margin-bottom: 40px;
 }
 .header-bg {
   padding-top: 18px;
