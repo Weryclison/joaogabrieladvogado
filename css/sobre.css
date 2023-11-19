@@ -33,6 +33,20 @@
 .conteudo li img {
   padding: 0px 28px;
 }
+.atendimento {
+  background-color: var(--cor-p3);
+  display: grid;
+  margin-top: 80px;
+}
+.atendimento h2 {
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 70px;
+}
+.atendimento .botao {
+  justify-self: center;
+  margin-bottom: 140px;
+}
 @media (max-width: 1050px) {
   .sobre-grid {
     grid-template-columns: 1fr;
@@ -53,5 +67,12 @@
   }
   .conteudo li img {
     padding: 0px 14px;
+  }
+  .atendimento h2 {
+    padding-top: 50px;
+    margin-bottom: 32px;
+  }
+  .atendimento .botao {
+    margin-bottom: 70px;
   }
 }
