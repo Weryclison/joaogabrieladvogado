@@ -24,10 +24,10 @@
 .perguntas dt {
   position: relative;
   padding-right: 30px;
-  margin-bottom: 48px;
   padding-bottom: 20px;
-  border-bottom: 2px solid var(--cor-p2);
+  margin-top: 12px;
   cursor: pointer;
+  font-weight: 500;
 }
 .perguntas dt:hover {
   color: var(--cor-1);
@@ -52,7 +52,29 @@
   background: url(../img/setinha.svg) no-repeat right;
   top: 10px;
   right: 0;
+  transition-duration: 0.2s;
 }
+.perguntas dt.ativo::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 14px;
+  height: 6px;
+  background: url(../img/setinha-virada.png) no-repeat right;
+  top: 10px;
+  right: 0;
+}
+
+.perguntas dd {
+  margin-bottom: 24px;
+  border-bottom: 2px solid var(--cor-p2);
+  padding-bottom: 20px;
+  display: none;
+}
+.perguntas dd.ativo {
+  display: block;
+}
+
 .fale-conosco form {
   display: grid;
   grid-template-columns: 1fr 1fr;
