@@ -34,6 +34,14 @@
   box-sizing: border-box;
   border: 2px solid var(--cor-1);
 }
+.botao,
+.botao2 {
+  transition: transform 0.3s ease;
+}
+.botao:hover,
+.botao2:hover {
+  transform: translate3d(0, -10px, 0);
+}
 
 @media (max-width: 750px) {
   .botao {

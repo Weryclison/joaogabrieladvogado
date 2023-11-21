@@ -28,6 +28,10 @@
   background-color: var(--cor-p3);
   display: grid;
   place-items: center;
+  transition: box-shadow 0.2s;
+}
+.diferenciais-quadrado:hover {
+  box-shadow: inset 0 0 0 3px var(--detalhe);
 }
 .diferenciais-quadrado p {
   text-align: center;

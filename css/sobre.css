@@ -29,6 +29,10 @@
   background-color: var(--cor-1);
   margin-bottom: 28px;
   padding: 20px 8px;
+  transition: box-shadow 0.2s;
+}
+.conteudo li:hover {
+  box-shadow: inset 0 0 0 2px var(--detalhe);
 }
 .conteudo li img {
   padding: 0px 28px;

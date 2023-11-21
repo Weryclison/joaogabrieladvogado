@@ -17,6 +17,10 @@ header .menu li {
   display: inline-block;
   margin-left: 100px;
 }
+header .menu li:hover {
+  color: var(--detalhe);
+}
+
 .header-titulo,
 .header-texto {
   text-align: center;
@@ -26,6 +30,7 @@ header .menu li {
   display: flex;
   justify-content: center;
 }
+
 .header-botoes {
   gap: 90px;
   padding-bottom: 180px;

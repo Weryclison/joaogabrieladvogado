@@ -21,10 +21,19 @@ footer .rodape {
   justify-content: space-between;
   padding-bottom: 20px;
 }
+footer .rodape a:hover {
+  color: var(--detalhe);
+}
 @media (max-width: 600px) {
   footer .rodape {
     display: grid;
     grid-template-columns: 1fr;
     gap: 28px;
+  }
+  .termos p {
+    text-align: left;
+  }
+  .termos p:first-child {
+    text-align: right;
   }
 }
