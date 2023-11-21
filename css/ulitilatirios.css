@@ -14,11 +14,11 @@
   background-color: transparent;
   padding: 10px 20px;
   border-radius: 4px;
-  letter-spacing: 0;
   text-align: center;
   display: inline-block;
   box-sizing: border-box;
   border: 2px solid var(--detalhe);
+  cursor: pointer;
 }
 .botao2 {
   font-family: lora;
@@ -26,7 +26,7 @@
   font-size: 1.5rem;
   color: var(--cor-1);
   background-color: transparent;
-  padding: 5px 20px;
+  padding: 10px 20px;
   border-radius: 4px;
   letter-spacing: 0;
   text-align: center;

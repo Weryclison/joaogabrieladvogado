@@ -35,16 +35,16 @@
 }
 .atendimento {
   background-color: var(--cor-p3);
-  display: grid;
   margin-top: 80px;
+  display: flex;
+  margin-bottom: 40px;
 }
 .atendimento h2 {
-  text-align: center;
   padding-top: 100px;
   margin-bottom: 70px;
+  text-align: center;
 }
 .atendimento .botao {
-  justify-self: center;
   margin-bottom: 140px;
 }
 @media (max-width: 1050px) {

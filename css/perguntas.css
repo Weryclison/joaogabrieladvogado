@@ -1,0 +1,119 @@
+.perguntas-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.duvidas {
+  background-color: var(--cor-p3);
+  margin-top: 80px;
+}
+.duvidas .span-3 {
+  padding-top: 40px;
+  margin-bottom: 50px;
+}
+.perguntas {
+  position: relative;
+}
+
+.perguntas h2 {
+  border-bottom: 3px solid var(--detalhe);
+  padding-bottom: 20px;
+  display: inline-block;
+  margin-bottom: 80px;
+}
+.perguntas dt {
+  position: relative;
+  padding-right: 30px;
+  margin-bottom: 48px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--cor-p2);
+}
+
+.perguntas dt::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 4px;
+  background: var(--detalhe);
+  margin-right: 8px;
+  margin-bottom: 6px;
+}
+
+.perguntas dt::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 14px;
+  height: 6px;
+  background: url(../img/setinha.svg) no-repeat right;
+  top: 10px;
+  right: 0;
+}
+.fale-conosco form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.fale-conosco h2 {
+  margin-bottom: 80px;
+  padding-bottom: 20px;
+  display: inline-block;
+  border-bottom: 3px solid var(--detalhe);
+}
+.duvidas input[type="text"],
+.duvidas input[type="email"],
+.duvidas textarea {
+  border: 2px solid var(--cor-p2);
+  border-radius: 2px;
+  background: var(--cor-p3);
+  padding: 20px 16px;
+  color: var(--cor-3);
+  width: 100%;
+  box-sizing: border-box;
+}
+.duvidas input[type="text"]:focus,
+.duvidas input[type="email"]:focus,
+.duvidas textarea:focus {
+  outline: none;
+  border: 2px solid var(--detalhe);
+  background: var(--cor-p2);
+}
+.fale-conosco .mensagem {
+  grid-column: 1/-1;
+  max-height: 200px;
+}
+form label {
+  display: block;
+  margin-bottom: 12px;
+}
+.fale-conosco .botao {
+  margin-bottom: 80px;
+  width: initial;
+}
+
+@media (max-width: 1050px) {
+  .perguntas-grid {
+    grid-template-columns: 1fr;
+  }
+  .span-3 {
+    display: none;
+  }
+  .perguntas h2 {
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  .perguntas dt {
+    padding-right: 30px;
+    margin-bottom: 24px;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .fale-conosco form {
+    grid-template-columns: 1fr;
+  }
+  .fale-conosco h2 {
+    margin-bottom: 40px;
+  }
+}
