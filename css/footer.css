@@ -1,0 +1,30 @@
+footer {
+  background-color: var(--cor-p3);
+  padding-top: 40px;
+  text-align: center;
+}
+.logo-footer {
+  display: inline-block;
+}
+footer .termos {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 12px;
+  margin-top: 60px;
+  padding-top: 32px;
+  border-top: 3px solid var(--detalhe);
+  margin-bottom: 60px;
+}
+
+footer .rodape {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+@media (max-width: 600px) {
+  footer .rodape {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}
