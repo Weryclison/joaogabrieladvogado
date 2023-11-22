@@ -1,23 +1,12 @@
+import scrollSuave from "./scroll-suave.js";
 export default function initMenuMobile() {
   document.addEventListener("DOMContentLoaded", function () {
-    var button = document.querySelector('[data-menu="button"]');
-    var menu = document.querySelector("#menu");
-    var linksInterno = document.querySelectorAll(".menu li a");
-
-    function scrolar(i) {
-      i.preventDefault();
-      const href = i.currentTarget.getAttribute("href");
-      const section = document.querySelector(href);
-      section.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-      button.classList.remove("active");
-      menu.classList.remove("active");
-    }
+    const button = document.querySelector('[data-menu="button"]');
+    const menu = document.querySelector("#menu");
+    const linksInterno = document.querySelectorAll(".menu li a");
 
     linksInterno.forEach((item) => {
-      item.addEventListener("click", scrolar);
+      item.addEventListener("click", scrollSuave);
     });
 
     button.addEventListener("click", function () {
@@ -26,7 +15,7 @@ export default function initMenuMobile() {
     });
 
     document.addEventListener("click", function (event) {
-      var isClickInside =
+      let isClickInside =
         menu.contains(event.target) || button.contains(event.target);
       if (!isClickInside) {
         button.classList.remove("active");
