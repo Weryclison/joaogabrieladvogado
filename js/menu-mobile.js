@@ -1,23 +1,37 @@
-import outsideClick from "./outsideclick.js";
+export default function initMenuMobile() {
+  document.addEventListener("DOMContentLoaded", function () {
+    var button = document.querySelector('[data-menu="button"]');
+    var menu = document.querySelector("#menu");
+    var linksInterno = document.querySelectorAll(".menu li a");
 
-export default function menuMobile() {
-  const menuButton = document.querySelector("[data-menu='button']");
-  const menuList = document.querySelector("[data-menu='list']");
-  const eventos = ["click", "touchstart"];
-
-  if (menuButton) {
-    function openMenu(event) {
-      menuList.classList.add("active");
-      menuButton.classList.add("active");
-      if (menuList) {
-        outsideClick(menuList, eventos, () => {
-          menuList.classList.remove("active");
-          menuButton.classList.remove("active");
-        });
-      }
+    function scrolar(i) {
+      i.preventDefault();
+      const href = i.currentTarget.getAttribute("href");
+      const section = document.querySelector(href);
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+      button.classList.remove("active");
+      menu.classList.remove("active");
     }
-    eventos.forEach((evento) => {
-      menuButton.addEventListener(evento, openMenu);
+
+    linksInterno.forEach((item) => {
+      item.addEventListener("click", scrolar);
     });
-  }
+
+    button.addEventListener("click", function () {
+      this.classList.toggle("active");
+      menu.classList.toggle("active");
+    });
+
+    document.addEventListener("click", function (event) {
+      var isClickInside =
+        menu.contains(event.target) || button.contains(event.target);
+      if (!isClickInside) {
+        button.classList.remove("active");
+        menu.classList.remove("active");
+      }
+    });
+  });
 }
