@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Advogado especializado em direito civil oferecendo consultoria jurídica personalizada e representação eficaz. Entre em contato para saber mais.">
 
-  <link rel="stylesheet" href="style.min.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lora:wght@400;600&display=swap" rel="stylesheet">
@@ -19,8 +19,8 @@
     <div class="header-bg container">
       <div class="menu">
         <img src="img/logo.svg" class="logo" alt="Logo">
-        <ul>
-
+        <button data-menu="button" aria-expanded="false" aria-controls="menu"><img src="./img/menu-mobile.svg" alt="menu-icon"></button>
+        <ul data-menu="list" id="menu">
           <li class="font-1-e cor-1"><a href="#sobre">Sobre</a></li>
           <li class="font-1-e cor-1"><a href="#diferenciais">Diferenciais</a></li>
           <li class="font-1-e cor-1"><a href="#contato">Contato</a></li>

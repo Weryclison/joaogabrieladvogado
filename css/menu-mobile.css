@@ -1,0 +1,38 @@
+[data-menu="button"] {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .js [data-menu="button"] {
+    display: block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    position: relative;
+    z-index: 300;
+  }
+  .js [data-menu="button"].active {
+    transform: rotate(90deg);
+    transition: transform 0.3s;
+  }
+  #menu {
+    display: none;
+    height: 100%;
+    margin-left: 0px;
+    position: absolute;
+    background: var(--cor-p4);
+    max-width: 160px;
+    z-index: 200;
+    top: 0;
+    right: 0;
+    padding: 120px 12px 20px 20px;
+    text-align: right;
+    border-left: 2px solid var(--detalhe);
+    border-bottom: 2px solid var(--detalhe);
+  }
+  #menu.active {
+    display: block;
+    animation: 0.3s slideInFromRight;
+  }
+}

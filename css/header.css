@@ -37,16 +37,22 @@ header .menu li:hover {
 }
 
 @media (max-width: 1000px) {
-  header .menu {
-    padding-bottom: 60px;
-  }
+  /* header .menu { */
+  /* padding-bottom: 60px; */
+  /* } */
   .header-titulo,
   .header-texto {
     text-align: left;
     margin-bottom: 24px;
   }
-  header .menu ul {
-    display: none;
+  /* header .menu ul { */
+  /* margin-top: 140px; */
+  /* display: none; */
+  /* display: grid; */
+  /* } */
+  header .menu li {
+    margin-left: 0px;
+    padding: 12px 8px;
   }
   .header-botoes {
     justify-content: left;
