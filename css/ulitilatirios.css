@@ -42,12 +42,12 @@
 .botao2:hover {
   transform: translate3d(0, -10px, 0);
 }
-@keyframes slideInFromRight {
+@keyframes slide {
   0% {
-    transform: translateX(100%);
+    transform: translateY(-100%);
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
