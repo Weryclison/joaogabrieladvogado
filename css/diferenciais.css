@@ -38,6 +38,7 @@
   padding: 0px 40px;
   margin-bottom: 90px;
   min-height: 100px;
+  margin-top: 20px;
 }
 .diferenciais-quadrado h4 {
   margin-bottom: 35px;
@@ -70,6 +71,7 @@
 
   .diferenciais-quadrado p {
     padding: 0px 10px;
+    margin-top: 20px;
     margin-bottom: 40px;
     min-height: 0px;
   }
